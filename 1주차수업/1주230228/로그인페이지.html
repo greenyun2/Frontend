@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    width: 980px;
+    margin: 10px auto;
+  }
+  #main_header {
+    position: relative;
+  }
+  #main_header.logo {
+    position:absolute;
+    top:10px; left:15px;
+  }
+  #main_header.login_menu {
+    position : absolute
+    top:10px; right:0;
+  }
+  .login_menu>span>a {
+    display: inline-block;
+    width: 70px; padding-left: 10px;
+    text-align: center;
+    color: #000;
+  }
+</style>
+<body>
+  <!--header-->
+  <header id="main_header">
+    <div class="logo">
+      <a href="https://www.coupang.com" target="_blank">\
+        <img src="./img/logo.png" width="180px" alt="쿠팡로고">
+      </a>
+    </div>
+    <div class="login_menu">
+      <span><a href="">로그인</a></span>
+      <span><a href=""></a>회원가입</span>
+      <span><a href=""></a>고객센터</span>
+    </div>
+  </header>
+</body>
+</html>
