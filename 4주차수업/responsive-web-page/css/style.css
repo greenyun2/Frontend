@@ -1,0 +1,52 @@
+/* Google Web Font */
+
+
+
+/* font awesome */
+
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Default CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  color: #222;
+  font-size: 15px;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+}
+.gnb-inner {
+  border: 1px solid #000;
+  width: calc(100% - 40px);
+  margin: auto;
+  line-height: 60px;
+}
+.logo {
+  float: left;
+}
+.gnb {
+  float: right;
+}
+.menu {
+  display: none;
+}
+.menu a .slogan {
+  font-size: 16px;
+  font-style: italic;
+}
