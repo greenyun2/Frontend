@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  //  // 프롬프트 함수, 내장함수, ""큰따옴표가 와야함
+  // let age = prompt("당신의 나이를 알려주세요!", "ex. 20");
+  // // 조건식 
+  // if (age >= 20) {
+  //   document.write("😀 당신은 성인입니다!");
+  // } else {
+  //   document.write("😐 당신은 미성년자입니다");
+  // };
+    // let은 변수를 지정하고 정의
+  let num = 1;
+  let t = "<table border=1>";
+    // 반복문을 쓸떈 for
+  for(let i = 1; i <= 5; i++) {
+    t+="<tr>";
+    for(let k = 1; k <= 5; k++) {
+      t+="<td>" + num + "</td>";
+      num++;
+    }
+    t+="</tr>";
+  } 
+    // 대입연산자 t라는 연산자에 테이블 태그를????
+    t+="</table>";
+    document.write(t);
+    console.log(t);
+    
+</script>
+<body>
+  
+</body>
+</html>
