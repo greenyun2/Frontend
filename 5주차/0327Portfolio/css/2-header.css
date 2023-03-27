@@ -1,0 +1,55 @@
+.header {
+  /* 수직, 수평 정렬 */
+  display: flex;
+  /* felx를 줬기때문에 */
+  justify-content: space-between;
+  align-items: center;
+    /* 스크롤을 아래로 내리는 순간 fixed로 변함 */
+  position: sticky;
+  top: 0;
+  /* 변수값으로 높이값 지정 */
+  height: var(--height-toolbar);
+  background-color: var(--color-main);
+  color: white;
+}
+.header_logo {
+  height: 48px;
+  margin: bottom 4px;
+  margin-left: 10px;
+  /* 반전효과 */
+  filter: invert();
+}
+.header_nav-item {
+  /* 한줄로 */
+  display: inline-block;
+  font-size: var(--font-size-larger);
+  /* 하단에 바를 넣어 위치값을 잡으려고 렐러티브 */
+  position: relative;
+}
+.header_nav-item::after {
+  /* 전후문자 선택자 선택시 컨텐츠는 기본 */
+  content: '';
+  /* 가상요소 선택전 nav-item의 위치를 기준 */
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  height: 0;
+  left: 50%;
+  /* 네이게이션 하단바 퍼지는 속도 */
+  transition: 0.35s;
+  bottom: 0;
+}
+/* 마우스 선택시 효과 */
+.header_nav-item:hover::after {
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+.header_nav-item a {
+  display: inline-block;
+  height: var(--height-toolbar);
+  /* 수직정렬 */
+  line-height: var(--height-toolbar);
+  padding: 0 0.8em;
+  color: #fff;
+}

@@ -1,0 +1,12 @@
+main {
+  /* 양쪽으로 쪼개지지 않는 레이아웃을 잡을때는 그리드가 비율을 할당해 주는게 좋다 */
+  display: grid;
+  /* 각각 배치된 열에 할당해줄수 있다 */
+  grid-template-columns: 1fr 1fr;
+}
+#about {
+  background-color: var(--color-lighter-bg);
+  /* about 영역만 그리드가 깨진다 */
+  grid-column: 1 / -1;
+}
+
