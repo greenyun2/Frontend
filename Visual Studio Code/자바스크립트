@@ -12,3 +12,31 @@ form.addEventListener('submit', function(event) {
     input.value = '';
   }
 });
+
+@@@ 여기부터 
+
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+const ul = document.querySelector('ul');
+
+const addItem = (text) => {
+    if(text !== '') {
+    const li = document.createElement('li');
+    const button = document.createElement('button');
+    const span = document.createElement('span');
+
+    span.innerText = text
+    button.innerText = '삭제';
+
+    li.appendChild(span);
+    li.appendChild(button);
+    ul.appendChild(li);
+  }
+}
+const handler = (event) => {
+  event.preventDefault();
+  addItem(input.value);
+    input.value = '';
+}
+
+form.addEventListener('submit', handler);
